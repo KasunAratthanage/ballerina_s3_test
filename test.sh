@@ -92,8 +92,8 @@ done
 export DATA_BUCKET_LOCATION=${INPUT_DIR}
 
 #git clone https://github.com/KasunAratthanage/ballerina_s3_test
-cd ballerina_s3_test/Test_api
-mvn clean install
+#cd Test_api
+mvn clean install -f Test_api/pom.xml -fae
 
 echo "Copying surefire-reports to ${OUTPUT_DIR}"
 
